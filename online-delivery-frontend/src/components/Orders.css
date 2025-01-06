@@ -1,0 +1,64 @@
+.orders-page {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.orders-page h1 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.orders-container {
+  overflow-x: auto;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders-table th, .orders-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.orders-table th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+
+/* Orders.css */
+
+/* Base styling for the status badge */
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Custom styles for each status */
+.status-badge.delivered {
+  background-color: #28a745;
+  color: white;
+}
+
+.status-badge.out-for-delivery {
+  background-color: #ffc107;
+  color: white;
+}
+
+.status-badge.completed {
+  background-color: #007bff;
+  color: white;
+}
+
+.status-badge.processing {
+  background-color: #17a2b8;
+  color: white;
+}

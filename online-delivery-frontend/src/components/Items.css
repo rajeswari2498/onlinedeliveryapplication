@@ -1,0 +1,159 @@
+/* General Styling for Items Page */
+.items {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+/* Product Card Styling */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.product-card {
+  width: 20%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-info {
+  padding: 15px;
+}
+
+.product-info h3 {
+  font-size: 20px;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.product-info p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 16px;
+}
+
+.product-info p strong {
+  font-weight: bold;
+}
+
+/* Availability Color Styling */
+.product-info p.availability {
+  font-weight: bold;
+}
+
+.product-info p[style*="color: green"] {
+  color: green;
+}
+
+.product-info p[style*="color: red"] {
+  color: red;
+}
+
+/* Quantity Buttons Styling */
+.quantity {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.quantity button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+.quantity button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+.quantity button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+/* Add to Cart and Buy Now Button Styling */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button:active:not(:disabled) {
+  background-color: #45a049;
+}
+
+/* Add to Cart Button */
+button:nth-child(4) {
+  background-color: #FF9800;
+  color: white;
+}
+
+button:nth-child(5) {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Error Styling for Out of Stock */
+.product-card.out-of-stock {
+  opacity: 0.6;
+}
+
+/* Mobile Responsive Styling */
+@media screen and (max-width: 768px) {
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+  }
+}

@@ -1,0 +1,83 @@
+/* Basic reset for the page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Container for the Notifications component */
+  .notifications-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin-top: 80px;
+  }
+  
+  /* Header styling */
+  .notifications-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Form elements styling */
+  input,
+  textarea {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Textarea specific styling */
+  textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  /* Button styling */
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    width: 15%;
+    max-width: 500px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Add some spacing between buttons */
+  button + button {
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+  
+  /* Responsive design for small screens */
+  @media (max-width: 600px) {
+    input,
+    textarea,
+    button {
+      width: 90%;
+    }
+  
+    button {
+      font-size: 1.1rem;
+    }
+  }
+  
